@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: [
+      { url: '/logoalsaud.png' },
+      { url: '/logoalsaud.png', sizes: '16x16', type: 'image/png' },
+      { url: '/logoalsaud.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/logoalsaud.png',
+    apple: '/logoalsaud.png',
+  },
   metadataBase: new URL('https://alsuwaidiautorepair.com'),
   alternates: {
     canonical: '/',
@@ -68,11 +77,6 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#DC2626" />
-        <link rel="icon" href="/logoalsaud.png" type="image/png" />
-        <link rel="shortcut icon" href="/logoalsaud.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/logoalsaud.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/logoalsaud.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/logoalsaud.png" />
         <meta name="geo.region" content="AE-DU" />
         <meta name="geo.placename" content="Dubai" />
         <meta name="geo.position" content="25.2891;55.3656" />
